@@ -1,0 +1,132 @@
+.MenuItem {
+    width: 100%;
+    background: none;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    color: primary;
+    --ripple-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    unicode-bidi: plaintext;
+}
+
+.MenuItem:hover {
+    background-color: rgba(168, 168, 168, 0.389);
+}
+
+.backdrop {
+    position: fixed;
+    left: -100vw;
+    right: -100vw;
+    top: -100mm;
+    bottom: -100vh;
+    z-index: 20;
+}
+
+.MenuItem.compact {
+    font-size: .875rem;
+    margin: 0.125rem 0.25rem;
+    padding: 0.25rem;
+    border-radius: 0.375rem;
+    width: auto;
+    font-weight: 500;
+    transform: scale(1);
+    transition: .15s ease-in-out transform;
+    
+}
+
+.react-icon {
+    margin-right: 15px;
+}
+
+#LeftMainHeader .Menu .bubble {
+    min-width: 15rem;
+    max-height: calc(100* 9.19px - 3.75rem);
+    overflow-y: auto;
+}
+.Menu {
+    &.compact  {
+        .bubble {
+            background: var(--color-bg-compact-menu);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            padding: 0.25rem 0;
+        }
+    }
+    .bubble {
+        overflow: hidden;
+        display: block;
+        list-style: none;
+        padding: 0.5rem 0;
+        margin: 0;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0.25rem 0.5rem 0.125rem rgb(114,114,114,0.251);
+        border-radius: 0.75rem;
+        min-width: 13.5rem;
+        z-index: 21;
+        overscroll-behavior: contain;
+        color: var(--text-color);
+        transform: scale(0.85);
+        transition: opacity 150ms cubic-bezier(0.2, 0, 0.2, 1), transform 150ms cubic-bezier(0.2, 0, 0.2, 1) !important;
+        --offset-y: calc(100% + 0.5rem);
+        --offset-x: 0;
+        &.with-footer {
+            padding-bottom: 0;
+        }
+        &.left {
+            left: 0;
+        }
+        &.top {
+            top: calc(100% + 0.5rem);
+        }
+        &.open {
+            transform: scale(1);
+        }
+        &.closing {
+            transition: opacity 0.2s ease-in, transform 0.2s ease-in !important;
+        }
+        .footer {
+            padding: 0.5rem 0;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    
+}
+
+.opacity-transition {
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+
+.MenuItem.compact .icon {
+    max-width: 1.25rem;
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 1.25rem;
+}
+
+.MenuItem .icon {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: var(--color-icon-secondary);
+}
+
+.opacity-transition {
+    &.not-open {
+        opacity: 0;
+    }
+    &.not-shown {
+        display: none;
+    }
+}

@@ -1,0 +1,114 @@
+.restore-password-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .shake {
+      background: rgb(247, 78, 78) !important;
+      border: rgb(172, 56, 56) !important; 
+       -webkit-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+       -moz-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+       -o-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+       animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+       transition: all 0.3s ease;
+   }
+}
+.restore-password-error {
+    width: 400px;
+    color: rgb(247, 78, 78);
+    // position:absolute;
+}
+.restore-password-success {
+    width: 400px;
+    color: rgb(87, 167, 93);
+    // position:absolute;
+}
+.restore-password-btn-submit {
+    // margin-left:10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: 1.4em;
+    margin-top: 15px;
+    // margin-right: 10%;
+    height: 60px;
+    &.success {
+      background: rgb(50, 155, 55) !important;
+      border: rgb(40, 128, 44) !important;
+      & span::after {
+        display: inline-block;
+        margin-top: 10px;
+        content: " ";
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        border-radius: 50%;
+        border: 3px solid rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+    }
+    &.loading {
+      background: rgb(146, 146, 146) !important;
+      border: rgb(146, 146, 146) !important;
+      & span::after {
+        display: inline-block;
+        margin-top: 10px;
+        content: " ";
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        border-radius: 50%;
+        border: 3px solid rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+    }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes trambling-animation {
+   0%, 50%, 100% {
+     transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+   }
+   10%, 30% {
+     transform: rotate(-2deg);
+     -webkit-transform: rotate(-2deg);
+     -moz-transform: rotate(-2deg);
+     -o-transform: rotate(-2deg);
+     -ms-transform: rotate(-2deg);
+   }
+   20%, 40% {
+     transform: rotate(2deg);
+     -webkit-transform: rotate(2deg);
+     -moz-transform: rotate(2deg);
+     -o-transform: rotate(2deg);
+     -ms-transform: rotate(2deg);
+   }
+}
+a {
+    text-decoration: none;
+}
+.register-link-container {
+  margin-top: 10px;
+}
+.password-icon {
+  position: absolute; 
+  right: 0.85rem;
+  top: 45%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

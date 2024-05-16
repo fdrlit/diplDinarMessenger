@@ -1,0 +1,48 @@
+.dark-theme {
+    --primary-color: rgb(33, 33, 33); /* Было: rgb(255, 255, 255) */
+    --background-color: rgb(33,33,33);
+    --primary-theme-color: rgb(51, 144, 236);
+    --online-status-color: rgb(51, 144, 236);
+    --color-gray: rgb(113,117,121);
+    --text-color: rgb(255, 255, 255); /* Было: rgb(0, 0, 0) */
+    --text-color-secondary: rgb(200, 200, 200); /* Было: rgb(255, 255, 255), изменено для контраста */
+    --text-color-last-msg: rgb(200, 200, 200); /* Было: rgb(170, 170, 170) */
+    --accent-color: rgb(255, 255, 255); /* Было: rgb(0, 0, 0), изменено на белый для акцентов */
+    --accent-color-secondary: rgb(44, 44, 44); /* Было: rgb(244, 244, 244) */
+    --accent-background-color: rgba(58, 152, 247, 0.302);
+    --reply-message-color: rgba(101, 170, 221, 0.102);
+    --reply-message-text-color: rgb(255, 255, 255);
+    --reply-message-text-color-input: rgba(52, 123, 194, 1);
+    --selected-chat-color: rgb(25, 118, 210); /* Было: rgb(51, 144, 236), слегка темнее для контраста */
+    --chat-hover-color: rgb(44, 44, 44);
+    --border-colors: rgb(48,48,48);
+    --msg-bg-color-own: rgb(21, 101, 180); /* Было: rgb(238, 255, 222) */
+    --msg-bg-color: rgb(37, 37, 37); /* Было: rgb(240, 240, 240) */
+    --chat-bg-color: rgb(18, 18, 18); /* Было: rgb(156, 192, 140), значительно темнее */
+    --border-color: rgb(80, 80, 80); /* Было: rgb(145, 145, 145), темнее для контраста */
+    --button-bg-color: rgb(34, 34, 34); /* Было: rgb(255, 255, 255), темный фон для кнопок */
+    --button-down-color: rgba(255, 255, 255, 0.1); /* Было: rgba(112, 117, 121, 0.75), светлый цвет для темного фона */
+    --button-down-hover: rgb(50, 50, 50); /* Было: rgb(255, 255, 255), темнее для видимости */
+    --button-down-bg-hover: rgb(25, 118, 210); /* Было: rgb(51, 144, 236) */
+    --unread-status-bg-color: rgba(44, 44, 44, 0.5);
+    --button-send-color: rgb(30, 136, 229); /* Было: rgb(0, 128, 255), немного темнее для контраста */
+    --button-send-hover: rgb(255, 255, 255); /* Было: rgb(255, 255, 255) */
+    --button-send-bg-hover: rgb(25, 118, 210); /* Было: rgb(51, 144, 236) */
+    --button-menu-color-hover: rgb(216, 216, 216);
+    --date-color: rgb(255, 255, 255); /* Было: rgb(255, 255, 255), сохраняется для видимости */
+    --date-bg-color: rgba(33, 33, 33, 0.549); /* Было: rgba(74, 142, 58, 0.549), темнее для фона */
+    --color-bg-compact-menu: rgba(33, 33, 33, 0.67);
+    --color-icon-secondary: rgb(170, 170, 170);
+    --menu-button-color: rgb(170, 170, 170);
+    --input-bg-color: rgb(58, 58, 58);
+    --input-text-color: rgb(200, 200, 200);
+    --link-color: rgb(199, 214, 255);
+    --color-error: #e53935;
+    --color-error-shade: rgb(211, 80, 78, 0.433);
+    --color-shade: rgba(233, 233, 233, 0.164);
+    --color-placeholders: rgb(162, 172, 180);
+    --color-text-secondary: rgb(200, 200, 200);
+    --color-composer-button: rgb(170,170,170,0.8);
+    --icon-message-read-color: rgb(255, 255, 255); 
+    --file-container-color: rgb(48, 48, 48);
+}
